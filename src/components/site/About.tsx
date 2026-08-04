@@ -29,7 +29,7 @@ export function About() {
             <SectionHeading
               eyebrow="About"
               title="A storyteller first, a creator second."
-              subtitle="AL Aamir Khan builds narratives that people remember. What began as a curiosity for the camera has become a disciplined practice of writing, filming and editing stories that move audiences across India — and the brands that want to reach them."
+              subtitle="AL Aamir Khan builds narratives that people remember. What began as a curiosity for the camera has become a disciplined practice of writing, filming and editing stories that move audiences across India and the brands that want to reach them."
             />
 
             <Reveal delay={0.12}>
@@ -37,7 +37,7 @@ export function About() {
                 <div>
                   <p className="eyebrow text-gold">Mission</p>
                   <p className="mt-3 text-sm leading-relaxed font-light text-muted-foreground">
-                    To make digital storytelling feel human again — work that earns attention
+                    To make digital storytelling feel human again, work that earns attention
                     instead of buying it.
                   </p>
                 </div>

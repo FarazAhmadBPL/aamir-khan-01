@@ -2,7 +2,7 @@ import { Reveal } from "./Reveal";
 import { BRAND_SLOTS } from "./data";
 
 export function Brands() {
-  const row = [...BRAND_SLOTS, ...BRAND_SLOTS];
+  const row = BRAND_SLOTS;//[...BRAND_SLOTS, ...BRAND_SLOTS];
   return (
     <section id="brands" className="overflow-hidden bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
@@ -29,9 +29,9 @@ export function Brands() {
         </div>
       </div>
 
-      <p className="mt-10 text-center text-xs tracking-[0.14em] text-muted-foreground/70 uppercase">
+      {/* <p className="mt-10 text-center text-xs tracking-[0.14em] text-muted-foreground/70 uppercase">
         Partner logos added on confirmation
-      </p>
+      </p> */}
     </section>
   );
 }

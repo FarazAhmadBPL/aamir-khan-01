@@ -3,7 +3,7 @@ import reel2 from "@/assets/reel-2.jpg";
 import reel3 from "@/assets/reel-3.jpg";
 import reel4 from "@/assets/reel-4.jpg";
 
-export const INSTAGRAM_URL = "https://www.instagram.com/";
+export const INSTAGRAM_URL = "https://www.instagram.com/alaamirkhan?igsh=M3RtNTY5dzFyeW10";
 export const FACEBOOK_URL = "https://www.facebook.com/";
 export const EMAIL = "contact@alaamirkhan.com";
 export const PHONE_DISPLAY = "+91 00000 00000";
@@ -65,56 +65,95 @@ export const REELS = [
   {
     image: reel1,
     likes: "128K",
-    caption: "Golden hour in the city that never slows down.",
-    url: INSTAGRAM_URL,
+    caption: "Gold jewellery पर offer 😍",
+    url: "https://www.instagram.com/reel/DbWAz3VtRx6/?igsh=c3ByamR4bW1pZ293",
   },
-  // {
-  //   image: reel2,
-  //   likes: "94.6K",
-  //   caption: "Behind the frame — every second is designed.",
-  //   url: INSTAGRAM_URL,
-  // },
-  // {
-  //   image: reel3,
-  //   likes: "212K",
-  //   caption: "On stage: what storytelling really costs.",
-  //   url: INSTAGRAM_URL,
-  // },
-  // {
-  //   image: reel4,
-  //   likes: "76.2K",
-  //   caption: "Details make the difference. Always have.",
-  //   url: INSTAGRAM_URL,
-  // },
+  {
+    image: reel2,
+    likes: "94.6K",
+    caption: "Bhopal का ससबे बड़ा Sandwich free😍",
+    url: "https://www.instagram.com/reel/Dba6g2yOO_b/?igsh=eWYxb3h6aDZhYnc1",
+  },
+  {
+    image: reel3,
+    likes: "212K",
+    caption: "Comforter 300 kg 😍",
+    url: "https://www.instagram.com/reel/DbXy5EuNFsj/?igsh=eWl3eWZxMnNqem13",
+  },
+  {
+    image: reel4,
+    likes: "76.2K",
+    caption: "Cats wale bags 😍",
+    url: "https://www.instagram.com/reel/DbLpqVPtRkN/?igsh=MWhsczduZm8waHJiNA==",
+  },
 ];
 
-export const MEDIA = {
-  featured: {
-    outlet: "Feature Story",
-    date: "Coming soon",
-    title: "The quiet architecture behind a modern Indian creator",
-    excerpt:
-      "A long-form conversation on craft, restraint and building an audience that trusts you — reserved for an upcoming publication feature.",
-  },
-  items: [
-    {
-      outlet: "Digital Publication",
-      date: "Coming soon",
-      title: "Creator economy: the storytellers shaping brand India",
-    },
-    {
-      outlet: "Business Daily",
-      date: "Coming soon",
-      title: "Why premium brands are moving budgets to creators",
-    },
-    {
-      outlet: "Lifestyle Magazine",
-      date: "Coming soon",
-      title: "A portrait of discipline: inside a creator's week",
-    },
-  ],
-};
+// export const MEDIA = {
+//   featured: {
+//     outlet: "Feature Story",
+//     date: "Coming soon",
+//     title: "The quiet architecture behind a modern Indian creator",
+//     excerpt:
+//       "A long-form conversation on craft, restraint and building an audience that trusts you — reserved for an upcoming publication feature.",
+//   },
+//   items: [
+//     {
+//       outlet: "Digital Publication",
+//       date: "Coming soon",
+//       title: "Creator economy: the storytellers shaping brand India",
+//     },
+//     {
+//       outlet: "Business Daily",
+//       date: "Coming soon",
+//       title: "Why premium brands are moving budgets to creators",
+//     },
+//     {
+//       outlet: "Lifestyle Magazine",
+//       date: "Coming soon",
+//       title: "A portrait of discipline: inside a creator's week",
+//     },
+//   ],
+// };
 
+import media1 from "@/assets/media1.jpg";
+import media2 from "@/assets/media2.jpg";
+import media3 from "@/assets/media3.png";
+
+export const MEDIA = [
+  {
+    id: 1,
+    image: media1,
+    title: "शौक में शुरू किया यूट्यूब चैनल, अब लाखों प्रशंसक",
+    description:
+      "भोपाल के सोशल मीडिया क्रिएटर ए.एल. आमिर खान की डिजिटल यात्रा को Patrika Plus ने प्रमुखता से प्रकाशित किया। इस फीचर में बताया गया कि कैसे उन्होंने शौक के तौर पर YouTube शुरू किया और आज अपने कंटेंट के माध्यम से भोपाल की गलियों, बाजारों, स्थानीय व्यवसायों और सामाजिक विषयों को लाखों दर्शकों तक पहुँचाया।",
+    outlet: "Patrika Plus",
+    date: "23 September 2023",
+    location: "Bhopal, Madhya Pradesh",
+    link: "#",
+  },
+  {
+    id: 2,
+    image: media2,
+    title: "YouTube Golden Play Button",
+    description:
+      "AL Aamir Khan received the prestigious YouTube Golden Play Button in recognition of crossing one million subscribers. The award celebrates his consistent efforts in creating impactful digital content and building one of Central India's fastest-growing creator communities.",
+    outlet: "YouTube Creator Awards",
+    date: "March 2026",
+    location: "India",
+    link: "#",
+  },
+  {
+    id: 3,
+    image: media3,
+    title: "Featured by The Quint",
+    description:
+      "The Quint highlighted AL Aamir Khan's inspiring journey from a passionate local creator to one of Bhopal's recognised digital personalities. The feature showcases his storytelling style, support for local businesses, and his growing influence across social media platforms.",
+    outlet: "The Quint",
+    date: "December 2024",
+    location: "Bhopal, Madhya Pradesh",
+    link: "#",
+  },
+];
 export const AWARDS = [
   { title: "Creator of the Year", org: "Awarding Organisation", year: "2025" },
   { title: "Excellence in Digital Storytelling", org: "Awarding Organisation", year: "2024" },
@@ -123,12 +162,12 @@ export const AWARDS = [
 ];
 
 export const BRAND_SLOTS = [
-  "Brand Partner",
-  "Luxury House",
-  "Tech Label",
-  "Lifestyle Co.",
-  "Fashion Atelier",
-  "Automotive",
+  "Fashion Brands",
+  "Restaurants",
+  "Real Estate",
+  "Farmhouse",
   "Hospitality",
+  "Automobile",
+  "Lifestyle",
   "Fragrance",
 ];

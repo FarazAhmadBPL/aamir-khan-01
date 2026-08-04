@@ -4,20 +4,20 @@ import { Reveal, SectionHeading } from "./Reveal";
 
 const VIDEOS = [
   {
-    title: "Crafting a premium creator brand",
+    title: "Jab Helicopter First Time Gaon Mein Utra Vlog 😍",
     description:
       "A look behind the scenes at how storytelling, pacing and visual detail shape a modern digital presence.",
-    thumbnail: "https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/I2FeuMMus40/hqdefault.jpg",
     duration: "12:18",
-    url: "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+    url: "https://www.youtube.com/watch?v=I2FeuMMus40",
   },
   {
-    title: "The mindset behind consistent content",
+    title: "Ghar Sajane Ke Liye Wallpaper PVC Pannel",
     description:
       "A short conversation on discipline, audience trust and why strong ideas still matter in a crowded feed.",
-    thumbnail: "https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg",
+    thumbnail: "https://img.youtube.com/vi/lMruU2XE0j8/hqdefault.jpg",
     duration: "08:42",
-    url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    url: "https://www.youtube.com/watch?v=lMruU2XE0j8",
   },
 ];
 
@@ -69,7 +69,7 @@ export function YoutubeSection() {
           />
           <Reveal delay={0.1}>
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/alaamirkhan"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-7 py-3.5 text-[0.72rem] tracking-[0.18em] text-foreground uppercase transition-all duration-500 hover:border-gold hover:text-gold"
@@ -101,14 +101,14 @@ export function YoutubeSection() {
                   <span className="absolute top-4 right-4 grid h-11 w-11 place-items-center rounded-full border border-ink-foreground/25 bg-ink/40 text-ink-foreground backdrop-blur-md transition-colors duration-500 group-hover:bg-gold group-hover:text-ink">
                     <Play className="h-4 w-4 fill-current" />
                   </span>
-                  <span className="absolute left-4 top-4 rounded-full bg-ink/70 px-3 py-1 text-[0.65rem] tracking-[0.18em] text-ink-foreground uppercase backdrop-blur-md">
+                  {/* <span className="absolute left-4 top-4 rounded-full bg-ink/70 px-3 py-1 text-[0.65rem] tracking-[0.18em] text-ink-foreground uppercase backdrop-blur-md">
                     {video.duration}
-                  </span>
+                  </span> */}
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     <h3 className="text-2xl font-medium text-ink-foreground">{video.title}</h3>
-                    <p className="mt-3 line-clamp-3 text-sm leading-relaxed font-light text-ink-foreground/80">
+                    {/* <p className="mt-3 line-clamp-3 text-sm leading-relaxed font-light text-ink-foreground/80">
                       {video.description}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </a>

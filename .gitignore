@@ -7,23 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-.output
-.vinxi
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+.output/
+.vinxi/
+.nitro/
+
+# TanStack
 .tanstack/**
-.nitro
-*.local
+
+# Vercel
+.vercel/
 
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars
 
+# Environment files
+.env
+.env.*
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*

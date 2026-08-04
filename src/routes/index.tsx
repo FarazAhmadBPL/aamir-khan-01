@@ -57,7 +57,7 @@ function Index() {
         <Reels />
         <YoutubeSection />
         <Media />
-        <Awards />
+        {/* <Awards /> */}
         <Contact />
       </main>
       <Footer />
