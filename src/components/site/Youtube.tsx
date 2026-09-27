@@ -64,7 +64,7 @@ export function YoutubeSection() {
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <SectionHeading
             eyebrow="YouTube"
-            title="Watch the stories behind the work."
+            title="Explore my work on YouTube"
             subtitle="Tap any thumbnail to open the video on YouTube in the app or browser."
           />
           <Reveal delay={0.1}>
@@ -75,7 +75,7 @@ export function YoutubeSection() {
               className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-7 py-3.5 text-[0.72rem] tracking-[0.18em] text-foreground uppercase transition-all duration-500 hover:border-gold hover:text-gold"
             >
               <Youtube className="h-4 w-4" />
-              Visit channel
+              Visit YouTube Channel
             </a>
           </Reveal>
         </div>

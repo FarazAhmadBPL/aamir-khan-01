@@ -4,8 +4,8 @@ import reel3 from "@/assets/reel-3.jpg";
 import reel4 from "@/assets/reel-4.jpg";
 
 export const INSTAGRAM_URL = "https://www.instagram.com/alaamirkhan?igsh=M3RtNTY5dzFyeW10";
-export const FACEBOOK_URL = "https://www.facebook.com/";
-export const EMAIL = "contact@alaamirkhan.com";
+export const FACEBOOK_URL = "https://www.facebook.com/share/1YKoupT83u/?mibextid=wwXIfr";
+export const EMAIL = "teamalaamir@gmail.com";
 export const PHONE_DISPLAY = "+91 00000 00000";
 export const WHATSAPP_NUMBER = "910000000000";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(

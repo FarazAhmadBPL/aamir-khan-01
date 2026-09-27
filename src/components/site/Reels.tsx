@@ -85,7 +85,7 @@ export function Reels() {
               className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-7 py-3 text-xs uppercase tracking-[0.2em] transition hover:border-gold hover:text-gold"
             >
               <Instagram className="h-4 w-4" />
-              Follow
+              Visit Instagram
             </a>
           </Reveal>
 
