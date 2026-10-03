@@ -157,7 +157,7 @@ export function About() {
                 >
                   <motion.img
                     src={portrait}
-                    alt="AL Aamir Khan, Indian digital creator and storyteller"
+                    alt="AL Aamir Khan, Bhopal influencer and content creator from Madhya Pradesh"
                     width={1024}
                     height={1280}
                     decoding="async"
@@ -232,10 +232,13 @@ export function About() {
               transition={{ duration: 1, delay: 0.4, ease: EASE }}
               className="mt-[clamp(0.75rem,2.5svh,1.5rem)] max-w-lg text-[0.95rem] leading-relaxed font-light text-ink-foreground/70 sm:text-base"
             >
-              I turn everyday moments into stories people watch, trust and
-              share. Eight-plus years of writing, shooting and editing, guided
-              by one rule: keep it real. That is why audiences stay and brands
-              come back.
+              I&apos;m AL Aamir Khan, a Bhopal-based Instagram influencer and
+              digital creator from Madhya Pradesh. For eight-plus years I&apos;ve
+              turned everyday moments into reels and vlogs people watch, trust
+              and share, for automobile, tech, real estate, food and lifestyle
+              brands. One rule: keep it real. That is why audiences stay and
+              brands come back. Bhopal ka apna creator, brand collaborations ke
+              liye hamesha ready.
             </motion.p>
 
             {/* Mission + Values (compact cards) */}

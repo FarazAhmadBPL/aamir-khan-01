@@ -13,10 +13,9 @@ import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { YoutubeSection } from "@/components/site/Youtube";
 
-const TITLE = "AL Aamir Khan — Digital Creator & Influencer";
+const TITLE = "AL Aamir Khan | Bhopal Influencer & Content Creator";
 const DESCRIPTION =
-  "Official website of AL Aamir Khan, Indian digital creator, storyteller and influencer helping brands connect with millions through authentic storytelling.";
-
+  "AL Aamir Khan is a Bhopal-based Instagram influencer & content creator. Automobile, tech, real estate & food reels. Book brand collaborations in MP.";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -24,21 +23,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "profile" },
+      { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-    ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: "AL Aamir Khan",
-          jobTitle: "Digital Creator and Influencer",
-          nationality: "Indian",
-          description: DESCRIPTION,
-        }),
-      },
     ],
   }),
   component: Index,

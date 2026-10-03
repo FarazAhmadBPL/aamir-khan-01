@@ -33,7 +33,7 @@ export const SOCIAL_PROOF = [
 
 export const STATS = [
   { value: 553000, suffix: "+", label: "Instagram Followers" },
-  { value: 35, suffix: "+", label: "Brand Collaborations" },
+  { value: 50, suffix: "+", label: "Brand Collaborations" },
   { value: 20, suffix: "+", label: "Media Features" },
   { value: 6, suffix: "", label: "Awards & Honours" },
   { value: 8, suffix: "", label: "Years of Experience" },
@@ -43,12 +43,12 @@ export const TIMELINE = [
   {
     phase: "Started",
     year: "2018",
-    text: "First frames, first stories - a phone camera, a notebook of ideas and an unreasonable belief in the craft.",
+    text: "First frames, first stories in Bhopal - a phone camera, a notebook of ideas and an unreasonable belief in the craft.",
   },
   {
     phase: "Growth",
     year: "2020",
-    text: "A distinct visual language emerged. Audiences arrived for the storytelling and stayed for the honesty.",
+    text: "A distinct visual language emerged. Audiences across Bhopal and Madhya Pradesh arrived for the storytelling and stayed for the honesty.",
   },
   {
     phase: "Recognition",
@@ -58,7 +58,7 @@ export const TIMELINE = [
   {
     phase: "Today",
     year: "Now",
-    text: "Building campaigns with India's most considered brands, from concept to final cut.",
+    text: "Building brand collaborations and campaigns with India's most considered brands, from concept to final cut.",
   },
 ];
 

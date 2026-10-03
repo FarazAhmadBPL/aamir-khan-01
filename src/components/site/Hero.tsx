@@ -106,7 +106,7 @@ export function Hero() {
         <motion.div style={{ x: imgX, y: imgY }} className="h-full w-full">
           <motion.img
             src={heroImage}
-            alt="AL Aamir Khan, Indian digital creator and influencer, in a black tailored suit"
+            alt="AL Aamir Khan, Bhopal influencer and content creator"
             width={1920}
             height={1280}
             fetchPriority="high"
@@ -150,9 +150,11 @@ export function Hero() {
           Open for brand collaborations
         </motion.div> */}
 
-        {/* Headline: each line slides up from a mask. Name stays for SEO/screen readers. */}
+        {/* Headline: each line slides up from a mask. Name + city stay for SEO/screen readers. */}
         <h1 className="mt-[clamp(1rem,3svh,1.75rem)] max-w-4xl text-[length:clamp(2.5rem,min(12vw,10.5svh),6rem)] leading-[0.98] tracking-tight text-ink-foreground">
-          <span className="sr-only">AL Aamir Khan: </span>
+          <span className="sr-only">
+            AL Aamir Khan, Bhopal&apos;s Digital Creator &amp; Influencer:{" "}
+          </span>
           {HEADLINE.map((line, i) => (
             <span
               key={line}
@@ -195,7 +197,11 @@ export function Hero() {
           className="mt-[clamp(0.75rem,2.5svh,1.5rem)] text-lg leading-[1.5] font-light text-ink-foreground sm:text-2xl"
         >
           <span className="sr-only">
-            Digital creator making vlogs, reels and brand stories.
+            Bhopal-based Instagram influencer, YouTube vlogger and digital
+            creator in Madhya Pradesh, making reels, vlogs and brand stories
+            for automobile, tech, real estate, food and lifestyle brands.
+            Available for brand collaborations and paid promotions in Bhopal
+            and across India.
           </span>
           <span aria-hidden="true">
             I create <RotatingPhrase reduce={reduce} />

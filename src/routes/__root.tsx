@@ -77,16 +77,45 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "AL Aamir Khan | Bhopal Influencer & Content Creator" },
+      {
+        name: "description",
+        content:
+  "AL Aamir Khan is a Bhopal-based Instagram influencer & content creator. Automobile, tech, real estate & food reels. Book brand collaborations in MP.",
+      },
+      { name: "author", content: "AL Aamir Khan" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { name: "geo.region", content: "IN-MP" },
+      { name: "geo.placename", content: "Bhopal" },
+      { name: "theme-color", content: "#e1306c" },
+
+      // Open Graph (WhatsApp / Facebook / LinkedIn)
+      { property: "og:site_name", content: "AL Aamir Khan" },
+      { property: "og:title", content: "AL Aamir Khan | Bhopal Influencer & Content Creator" },
+      {
+        property: "og:description",
+        content:
+          "Bhopal-based creator for automobile, tech, real estate and lifestyle brands. Book a collaboration.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://alaamirkhan.in/" },
+      { property: "og:image", content: "https://alaamirkhan.in/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:locale", content: "en_IN" },
+
+      // Twitter
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "AL Aamir Khan | Bhopal Influencer & Content Creator" },
+      {
+        name: "twitter:description",
+        content:
+          "Bhopal-based creator for automobile, tech, real estate and lifestyle brands.",
+      },
+      { name: "twitter:image", content: "https://alaamirkhan.in/og-image.jpg" },
     ],
     links: [
+      { rel: "canonical", href: "https://alaamirkhan.in/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -99,6 +128,42 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "AL Aamir Khan",
+          url: "https://alaamirkhan.in/",
+          image: "https://alaamirkhan.in/og-image.jpg",
+          jobTitle: "Social Media Influencer & Content Creator",
+          description:
+            "Bhopal-based content creator covering automobile, tech, real estate, lifestyle and food.",
+          nationality: "Indian",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Bhopal",
+            addressRegion: "Madhya Pradesh",
+            addressCountry: "IN",
+          },
+          knowsAbout: [
+            "Influencer marketing in Bhopal",
+            "Instagram reels and brand collaborations",
+            "YouTube vlogging",
+            "Automobile and car reviews",
+            "Tech and gadget reviews",
+            "Real estate and property promotion",
+            "Food vlogging and lifestyle content",
+            "Madhya Pradesh content creation",
+          ],
+          sameAs: [
+            "https://www.instagram.com/alaamirkhan/",
+            "https://www.youtube.com/alaamirkhan",
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -108,7 +173,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
       <head>
         <HeadContent />
       </head>
