@@ -1,44 +1,11 @@
+import { useState } from "react";
 import { Instagram, Play, ArrowUpRight, Heart } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { INSTAGRAM_URL, REELS } from "./data";
+import { openInstagram } from "./openInstagram";
+import { ReelsSheet } from "./ReelsSheet";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
-
-function openInstagram(e: React.MouseEvent<HTMLAnchorElement>, url: string) {
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  if (!isMobile) return;
-
-  try {
-    const { pathname } = new URL(url);
-    const parts = pathname.split("/").filter(Boolean);
-    let deepLink = "";
-
-    if (parts[0] === "reel" || parts[0] === "p") {
-      deepLink = `instagram://media?id=${parts[1]}`;
-    } else if (parts[0]) {
-      deepLink = `instagram://user?username=${parts[0]}`;
-    }
-    if (!deepLink) return;
-
-    e.preventDefault();
-
-    const fallback = window.setTimeout(() => {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }, 900);
-
-    document.addEventListener(
-      "visibilitychange",
-      () => {
-        if (document.hidden) window.clearTimeout(fallback);
-      },
-      { once: true }
-    );
-
-    window.location.href = deepLink;
-  } catch {
-    /* ignore */
-  }
-}
 
 // Fan layout: left tilt, centre hero card, right tilt
 const FAN = [
@@ -49,6 +16,7 @@ const FAN = [
 
 export function Reels() {
   const reduce = useReducedMotion();
+  const [sheetOpen, setSheetOpen] = useState(false);
 
   const featured = REELS.filter((r) => r.featured);
   const others = REELS.filter((r) => !r.featured);
@@ -151,16 +119,15 @@ export function Reels() {
               <Instagram className="h-4 w-4" />
               Follow on Instagram
             </a>
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => openInstagram(e, INSTAGRAM_URL)}
+            <button
+              type="button"
+              onClick={() => setSheetOpen(true)}
+              aria-haspopup="dialog"
               className="inline-flex items-center gap-1.5 rounded-full border border-white/50 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:bg-white/20"
             >
               Explore All Reels
               <ArrowUpRight className="h-4 w-4" />
-            </a>
+            </button>
           </motion.div>
         </div>
 
@@ -246,6 +213,9 @@ export function Reels() {
           </div>
         </div>
       </div>
+
+      {/* ============ ALL REELS BOTTOM SHEET ============ */}
+      <ReelsSheet open={sheetOpen} onClose={() => setSheetOpen(false)} />
     </section>
   );
 }
