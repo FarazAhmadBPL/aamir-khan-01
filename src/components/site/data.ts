@@ -6,8 +6,8 @@ import reel4 from "@/assets/reel-4.jpg";
 export const INSTAGRAM_URL = "https://www.instagram.com/alaamirkhan?igsh=M3RtNTY5dzFyeW10";
 export const FACEBOOK_URL = "https://www.facebook.com/share/1YKoupT83u/?mibextid=wwXIfr";
 export const EMAIL = "teamalaamir@gmail.com";
-export const PHONE_DISPLAY = "+91 00000 00000";
-export const WHATSAPP_NUMBER = "910000000000";
+export const PHONE_DISPLAY = "+91 92448 15161";
+export const WHATSAPP_NUMBER = "919244815161";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "Hello AL Aamir Khan, I'd like to discuss a collaboration.",
 )}`;
@@ -15,17 +15,18 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Achievements", href: "#achievements" },
+  // { label: "Achievements", href: "#achievements" },
   { label: "Brands", href: "#brands" },
   { label: "Instagram", href: "#instagram" },
+  { label: "YouTube", href: "#youtube" },
   { label: "Media", href: "#media" },
-  { label: "Awards", href: "#awards" },
+  // { label: "Awards", href: "#awards" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const SOCIAL_PROOF = [
   { value: 25000000, suffix: "+", label: "Monthly Reach" },
-  { value: 35, suffix: "+", label: "Brand Collaborations" },
+  { value: 50, suffix: "+", label: "Brand Collaborations" },
   { value: 180000000, suffix: "+", label: "Content Views" },
   { value: 20, suffix: "+", label: "Media Features" },
 ];
@@ -42,7 +43,7 @@ export const TIMELINE = [
   {
     phase: "Started",
     year: "2018",
-    text: "First frames, first stories — a phone camera, a notebook of ideas and an unreasonable belief in the craft.",
+    text: "First frames, first stories - a phone camera, a notebook of ideas and an unreasonable belief in the craft.",
   },
   {
     phase: "Growth",
@@ -64,24 +65,108 @@ export const TIMELINE = [
 export const REELS = [
   {
     image: reel1,
+    brand: "AL Aamir Khan",
+    category: "Lifestyle",
+    featured: true,
     likes: "128K",
     caption: "Gold jewellery पर offer 😍",
     url: "https://www.instagram.com/reel/DbWAz3VtRx6/?igsh=c3ByamR4bW1pZ293",
   },
   {
     image: reel2,
+    brand: "Bhopal Food",
+    category: "Lifestyle",
+    featured: true,
     likes: "94.6K",
-    caption: "Bhopal का ससबे बड़ा Sandwich free😍",
+    caption: "Bhopal का सबसे बड़ा Sandwich free😍",
     url: "https://www.instagram.com/reel/Dba6g2yOO_b/?igsh=eWYxb3h6aDZhYnc1",
   },
   {
     image: reel3,
+    brand: "Comforter 300",
+    category: "Lifestyle",
+    featured: true,
     likes: "212K",
     caption: "Comforter 300 kg 😍",
     url: "https://www.instagram.com/reel/DbXy5EuNFsj/?igsh=eWl3eWZxMnNqem13",
   },
   {
     image: reel4,
+    brand: "Cats Bags",
+    category: "Fashion",
+    featured: false,
+    likes: "76.2K",
+    caption: "Cats wale bags 😍",
+    url: "https://www.instagram.com/reel/DbLpqVPtRkN/?igsh=MWhsczduZm8waHJiNA==",
+  },
+  {
+    image: reel1,
+    brand: "Premium Motors",
+    category: "Automobile",
+    featured: false,
+    likes: "128K",
+    caption: "Gold jewellery पर offer 😍",
+    url: "https://www.instagram.com/reel/DbWAz3VtRx6/?igsh=c3ByamR4bW1pZ293",
+  },
+  {
+    image: reel2,
+    brand: "Bhopal Realty",
+    category: "Real Estate",
+    featured: false,
+    likes: "94.6K",
+    caption: "Bhopal का सबसे बड़ा Sandwich free😍",
+    url: "https://www.instagram.com/reel/Dba6g2yOO_b/?igsh=eWYxb3h6aDZhYnc1",
+  },
+  {
+    image: reel3,
+    brand: "Tech India",
+    category: "Tech",
+    featured: false,
+    likes: "212K",
+    caption: "Comforter 300 kg 😍",
+    url: "https://www.instagram.com/reel/DbXy5EuNFsj/?igsh=eWl3eWZxMnNqem13",
+  },
+  {
+    image: reel4,
+    brand: "Urban Style",
+    category: "Fashion",
+    featured: false,
+    likes: "76.2K",
+    caption: "Cats wale bags 😍",
+    url: "https://www.instagram.com/reel/DbLpqVPtRkN/?igsh=MWhsczduZm8waHJiNA==",
+  },
+  {
+    image: reel1,
+    brand: "Drive Bhopal",
+    category: "Automobile",
+    featured: false,
+    likes: "128K",
+    caption: "Gold jewellery पर offer 😍",
+    url: "https://www.instagram.com/reel/DbWAz3VtRx6/?igsh=c3ByamR4bW1pZ293",
+  },
+  {
+    image: reel2,
+    brand: "Smart Living",
+    category: "Real Estate",
+    featured: false,
+    likes: "94.6K",
+    caption: "Bhopal का सबसे बड़ा Sandwich free😍",
+    url: "https://www.instagram.com/reel/Dba6g2yOO_b/?igsh=eWYxb3h6aDZhYnc1",
+  },
+  {
+    image: reel3,
+    brand: "Digital World",
+    category: "Tech",
+    featured: false,
+    likes: "212K",
+    caption: "Comforter 300 kg 😍",
+    url: "https://www.instagram.com/reel/DbXy5EuNFsj/?igsh=eWl3eWZxMnNqem13",
+  },
+  {
+    image: reel4,
+    brand: "Lifestyle India",
+    category: "Lifestyle",
+    featured: false,
     likes: "76.2K",
     caption: "Cats wale bags 😍",
     url: "https://www.instagram.com/reel/DbLpqVPtRkN/?igsh=MWhsczduZm8waHJiNA==",
@@ -162,12 +247,24 @@ export const AWARDS = [
 ];
 
 export const BRAND_SLOTS = [
-  "Fashion Brands",
-  "Restaurants",
+  "Fashion & Apparel",
+  "Restaurants & Cafés",
   "Real Estate",
-  "Farmhouse",
-  "Hospitality",
-  "Automobile",
-  "Lifestyle",
-  "Fragrance",
+  "Farmhouses & Villas",
+  "Hotels & Resorts",
+  "Automobiles",
+  "Luxury Lifestyle",
+  "Fragrances & Perfumes",
+  "Beauty & Skincare",
+  "Watches & Accessories",
+  "Fine Jewellery",
+  "Travel & Tourism",
+  "Food & Beverages",
+  "Interior Design",
+  "Home & Decor",
+  "Wellness & Fitness",
+  "Consumer Technology",
+  "Premium Retail",
+  "Events & Experiences",
+  "Luxury Experiences",
 ];

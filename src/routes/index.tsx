@@ -52,7 +52,7 @@ function Index() {
         <Hero />
         <SocialProof />
         <About />
-        <Achievements />
+        {/* <Achievements /> */}
         <Brands />
         <Reels />
         <YoutubeSection />

@@ -32,7 +32,7 @@ export function Navbar() {
           AL AAMIR KHAN
         </a>
 
-        <ul className="hidden items-center gap-9 lg:flex">
+        <ul className="hidden items-center gap-8 lg:flex">
           {NAV_LINKS.map((l) => (
             <li key={l.href}>
               <a
