@@ -137,7 +137,7 @@ export function Hero() {
         className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-[clamp(5rem,13svh,10rem)] pb-[clamp(5rem,15svh,8rem)]"
       >
         {/* Availability pill */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: EASE }}
@@ -148,7 +148,7 @@ export function Hero() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
           Open for brand collaborations
-        </motion.div>
+        </motion.div> */}
 
         {/* Headline: each line slides up from a mask. Name stays for SEO/screen readers. */}
         <h1 className="mt-[clamp(1rem,3svh,1.75rem)] max-w-4xl text-[length:clamp(2.5rem,min(12vw,10.5svh),6rem)] leading-[0.98] tracking-tight text-ink-foreground">
